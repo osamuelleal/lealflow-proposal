@@ -5,7 +5,7 @@ export function RequirementsSlide() {
   const { requirements } = clientConfig.content
 
   return (
-    <div className="relative flex-1 flex items-start md:items-center overflow-visible md:overflow-hidden py-6 md:py-0">
+    <div className="relative w-full overflow-visible md:overflow-hidden py-6 md:py-0">
       <div className="absolute inset-0 dot-grid opacity-30" />
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 flex flex-col gap-8 md:gap-10">

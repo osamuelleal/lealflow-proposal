@@ -25,7 +25,7 @@ export function SlideLayout({
   const isLast = currentSlide === totalSlides - 1
 
   return (
-    <div className="relative w-full h-screen bg-brand-dark flex flex-col overflow-hidden">
+    <div className="relative w-full h-dvh bg-brand-dark flex flex-col overflow-hidden">
       {/* Header bar */}
       <header className="flex-shrink-0 flex items-center justify-between px-4 md:px-8 py-3 md:py-4 border-b border-brand-border/40 z-50">
         <div className="flex items-center gap-2">
@@ -54,8 +54,8 @@ export function SlideLayout({
       </header>
 
       {/* Slide content — scrollable on mobile, centered on desktop */}
-      <main className="flex-1 min-h-0 relative overflow-y-auto overflow-x-hidden flex flex-col">
-        <div key={currentSlide} className="slide-enter flex-1 w-full flex flex-col">
+      <main className="flex-1 min-h-0 relative overflow-y-auto overflow-x-hidden">
+        <div key={currentSlide} className="slide-enter w-full min-h-full md:flex md:flex-col md:justify-center">
           {children}
         </div>
       </main>

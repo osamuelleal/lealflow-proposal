@@ -6,7 +6,7 @@ export function SolutionSlide() {
   const { presenter } = clientConfig
 
   return (
-    <div className="relative flex-1 flex items-center justify-center overflow-hidden">
+    <div className="relative w-full min-h-full flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 dot-grid opacity-30" />
 
       {/* Central glow */}
