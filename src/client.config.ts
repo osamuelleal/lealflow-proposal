@@ -89,9 +89,28 @@ export const clientConfig = {
     ],
 
     setup: {
-      price: 'R$ 4.000',
-      label: 'Setup — pagamento único',
-      paymentSuggestion: 'R$ 2.000 na assinatura + R$ 2.000 na entrega',
+      totalPrice: 'R$ 4.000',
+      paymentSteps: [
+        {
+          step: '01',
+          moment: 'Ao assinar o contrato',
+          value: 'R$ 2.000',
+          desc: 'Para iniciar o desenvolvimento imediatamente.',
+        },
+        {
+          step: '02',
+          moment: 'Na entrega e ativação',
+          value: 'R$ 2.000',
+          desc: 'Somente após o sistema estar funcionando.',
+        },
+        {
+          step: '03',
+          moment: 'A partir do mês seguinte',
+          value: 'R$ 700/mês',
+          desc: 'Mensalidade começa após a ativação.',
+          isMonthly: true,
+        },
+      ],
       items: [
         { what: 'Configuração da loja Nuvemshop', why: 'Catálogo, pagamentos e frete do zero' },
         { what: 'Criação do atendente virtual', why: 'Sistema de IA integrado ao seu WhatsApp' },
@@ -113,13 +132,7 @@ export const clientConfig = {
         { what: 'Inteligência Artificial (GPT-4o)', why: 'O cérebro do atendente' },
         { what: 'Manutenção e suporte', why: 'Problemas corrigidos sem custo extra' },
       ],
-      volumeTable: [
-        { range: 'Até 200 atendimentos/dia', price: 'R$ 700' },
-        { range: 'De 201 a 350/dia', price: 'R$ 850' },
-        { range: 'De 351 a 500/dia', price: 'R$ 1.000' },
-        { range: 'Acima de 500/dia', price: 'A negociar' },
-      ],
-      note: 'O reajuste por volume significa crescimento — um bom sinal para a Mi7.',
+      volumeNote: 'O valor pode ser reajustado proporcionalmente caso o volume de atendimentos cresça de forma consistente — com 30 dias de aviso prévio.',
     },
 
     timeline: {
