@@ -5,7 +5,7 @@ export function TimelineSlide() {
   const { timeline } = clientConfig.content
 
   return (
-    <div className="relative w-full min-h-full flex items-start md:items-center overflow-hidden py-6 md:py-0">
+    <div className="relative flex-1 flex items-start md:items-center overflow-visible md:overflow-hidden py-6 md:py-0">
       <div className="absolute inset-0 dot-grid opacity-30" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-brand-blue/8 blur-[120px] pointer-events-none" />
 

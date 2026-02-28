@@ -4,8 +4,7 @@ import { CoverSlide } from './components/slides/CoverSlide'
 import { ProblemSlide } from './components/slides/ProblemSlide'
 import { SolutionSlide } from './components/slides/SolutionSlide'
 import { FeaturesSlide } from './components/slides/FeaturesSlide'
-import { SetupSlide } from './components/slides/SetupSlide'
-import { MonthlySlide } from './components/slides/MonthlySlide'
+import { PricingSlide } from './components/slides/PricingSlide'
 import { TimelineSlide } from './components/slides/TimelineSlide'
 import { RequirementsSlide } from './components/slides/RequirementsSlide'
 import { ConditionsSlide } from './components/slides/ConditionsSlide'
@@ -17,8 +16,7 @@ const SLIDE_COMPONENTS = [
   ProblemSlide,
   SolutionSlide,
   FeaturesSlide,
-  SetupSlide,
-  MonthlySlide,
+  PricingSlide,
   TimelineSlide,
   RequirementsSlide,
   ConditionsSlide,
