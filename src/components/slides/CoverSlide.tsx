@@ -5,7 +5,7 @@ export function CoverSlide() {
   const { client, presenter, date } = clientConfig
 
   return (
-    <div className="relative flex-1 flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative w-full min-h-full flex flex-col items-center justify-center overflow-hidden">
       {/* Background grid */}
       <div className="absolute inset-0 dot-grid opacity-60" />
 

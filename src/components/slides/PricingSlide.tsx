@@ -5,7 +5,7 @@ export function PricingSlide() {
   const { setup, monthly } = clientConfig.content
 
   return (
-    <div className="relative flex-1 flex items-start md:items-center overflow-visible md:overflow-hidden py-6 md:py-0">
+    <div className="relative w-full overflow-visible md:overflow-hidden py-6 md:py-0">
       <div className="absolute inset-0 dot-grid opacity-30" />
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-brand-blue/10 blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-brand-cyan/5 blur-[80px] pointer-events-none" />
