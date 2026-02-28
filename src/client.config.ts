@@ -17,7 +17,7 @@ export const clientConfig = {
     company: 'Lealtech',
     product: 'Lealflow',
     author: 'Samuel Leal',
-    email: 'contato@lealtech.com.br',
+    email: 'contato@lealflow.com',
     whatsapp: '',
     tagline: 'Agente de Atendimento Inteligente',
   },
