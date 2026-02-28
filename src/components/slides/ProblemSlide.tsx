@@ -5,7 +5,7 @@ export function ProblemSlide() {
   const { problem } = clientConfig.content
 
   return (
-    <div className="relative w-full min-h-full flex items-start md:items-center overflow-hidden py-6 md:py-0">
+    <div className="relative flex-1 flex items-start md:items-center overflow-visible md:overflow-hidden py-6 md:py-0">
       <div className="absolute inset-0 dot-grid opacity-30" />
       <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-red-500/5 blur-[100px] pointer-events-none" />
 

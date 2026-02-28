@@ -6,7 +6,7 @@ export function CTASlide() {
   const { presenter, client } = clientConfig
 
   return (
-    <div className="relative w-full h-full flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex-1 flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 dot-grid opacity-50" />
 
       {/* Background glows */}

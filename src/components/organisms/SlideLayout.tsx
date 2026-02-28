@@ -53,9 +53,9 @@ export function SlideLayout({
         </div>
       </header>
 
-      {/* Slide content — scrollable on mobile */}
-      <main className="flex-1 relative overflow-y-auto overflow-x-hidden">
-        <div key={currentSlide} className="slide-enter w-full min-h-full">
+      {/* Slide content — scrollable on mobile, centered on desktop */}
+      <main className="flex-1 min-h-0 relative overflow-y-auto overflow-x-hidden flex flex-col">
+        <div key={currentSlide} className="slide-enter flex-1 w-full flex flex-col">
           {children}
         </div>
       </main>
