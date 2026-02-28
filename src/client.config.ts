@@ -88,24 +88,24 @@ export const clientConfig = {
     ],
 
     setup: {
-      totalPrice: 'R$ 4.000',
+      totalPrice: 'R$ 5.000',
       paymentSteps: [
         {
           step: '01',
           moment: 'Ao assinar o contrato',
-          value: 'R$ 2.000',
+          value: 'R$ 2.500',
           desc: 'Para iniciar o desenvolvimento imediatamente.',
         },
         {
           step: '02',
           moment: 'Na entrega e ativação',
-          value: 'R$ 2.000',
+          value: 'R$ 2.500',
           desc: 'Somente após o sistema estar funcionando.',
         },
         {
           step: '03',
           moment: 'A partir do mês seguinte',
-          value: 'R$ 700/mês',
+          value: 'R$ 800/mês',
           desc: 'Mensalidade começa após a ativação.',
           isMonthly: true,
         },
@@ -122,7 +122,7 @@ export const clientConfig = {
     },
 
     monthly: {
-      price: 'R$ 700',
+      price: 'R$ 800',
       label: '/mês',
       sublabel: 'Tudo incluído. Sem surpresas.',
       items: [
