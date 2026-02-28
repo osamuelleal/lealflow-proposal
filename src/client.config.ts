@@ -140,7 +140,7 @@ export const clientConfig = {
         { icon: '🔑', text: 'Acesso à conta da Nuvemshop' },
         { icon: '📱', text: 'Número de WhatsApp Business exclusivo para o atendente' },
         { icon: '📋', text: 'Lista de produtos com preços, descrições e fotos' },
-        { icon: '📅', text: 'Disponibilidade para reunião de briefing na Semana 1' },
+        { icon: '📝', text: 'Instruções sobre a empresa e loja, perguntas e respostas e informações para passar ao agente de como falar dos produtos' },
       ],
     },
 
@@ -149,7 +149,6 @@ export const clientConfig = {
       items: [
         { label: 'Contrato mínimo', value: '3 meses de mensalidade' },
         { label: 'Cancelamento', value: '30 dias de aviso prévio' },
-        { label: 'Reajuste anual', value: 'IGPM ou INPC (o menor)' },
         { label: 'Bugs e instabilidades', value: 'Corrigidos sem custo pela Lealtech' },
         { label: 'Novas funcionalidades', value: 'Orçadas separadamente (Fase 2)' },
       ],
