@@ -162,7 +162,7 @@ export const clientConfig = {
 
     cta: {
       headline: 'Pronto para transformar\nseu atendimento?',
-      subline: 'Próximo passo: assinar o contrato e agendar a reunião de briefing.',
+      subline: 'Próximo passo: assinar o contrato e enviar as informações necessárias.',
     },
   },
 }
