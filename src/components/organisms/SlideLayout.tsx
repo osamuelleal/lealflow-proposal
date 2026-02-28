@@ -27,21 +27,23 @@ export function SlideLayout({
   return (
     <div className="relative w-full h-screen bg-brand-dark flex flex-col overflow-hidden">
       {/* Header bar */}
-      <header className="flex-shrink-0 flex items-center justify-between px-8 py-4 border-b border-brand-border/40 z-50">
-        <div className="flex items-center gap-3">
-          <Logo size={32} />
+      <header className="flex-shrink-0 flex items-center justify-between px-4 md:px-8 py-3 md:py-4 border-b border-brand-border/40 z-50">
+        <div className="flex items-center gap-2">
+          <Logo size={28} />
           <div className="flex flex-col">
-            <span className="font-display text-sm font-bold text-white leading-none">
+            <span className="font-display text-xs md:text-sm font-bold text-white leading-none">
               {presenter.product}
             </span>
-            <span className="font-mono text-[10px] text-brand-muted leading-none mt-0.5">
+            <span className="font-mono text-[9px] md:text-[10px] text-brand-muted leading-none mt-0.5">
               {presenter.company}
             </span>
           </div>
         </div>
 
-        {/* Nav dots center */}
-        <NavDots total={totalSlides} current={currentSlide} onNavigate={onNavigate} />
+        {/* Nav dots — hidden on very small screens */}
+        <div className="hidden sm:block">
+          <NavDots total={totalSlides} current={currentSlide} onNavigate={onNavigate} />
+        </div>
 
         {/* Slide counter */}
         <div className="flex items-center gap-1 font-mono text-xs text-brand-muted">
@@ -51,15 +53,15 @@ export function SlideLayout({
         </div>
       </header>
 
-      {/* Slide content */}
-      <main className="flex-1 relative overflow-hidden">
-        <div key={currentSlide} className="slide-enter w-full h-full">
+      {/* Slide content — scrollable on mobile */}
+      <main className="flex-1 relative overflow-y-auto overflow-x-hidden">
+        <div key={currentSlide} className="slide-enter w-full min-h-full">
           {children}
         </div>
       </main>
 
       {/* Footer nav */}
-      <footer className="flex-shrink-0 flex items-center justify-between px-8 py-4 border-t border-brand-border/40 z-50">
+      <footer className="flex-shrink-0 flex items-center justify-between px-4 md:px-8 py-3 md:py-4 border-t border-brand-border/40 z-50">
         <button
           onClick={onPrev}
           disabled={isFirst}

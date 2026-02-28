@@ -5,13 +5,11 @@ export function ProblemSlide() {
   const { problem } = clientConfig.content
 
   return (
-    <div className="relative w-full h-full flex items-center overflow-hidden">
+    <div className="relative w-full min-h-full flex items-start md:items-center overflow-hidden py-6 md:py-0">
       <div className="absolute inset-0 dot-grid opacity-30" />
-
-      {/* Red accent glow */}
       <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-red-500/5 blur-[100px] pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-12 flex flex-col gap-12">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-8 md:px-12 flex flex-col gap-6 md:gap-12">
         <div className="stagger">
           <SlideTitle
             label="O Problema"
@@ -20,16 +18,16 @@ export function ProblemSlide() {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-4 stagger">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 stagger">
           {problem.painPoints.map((point, i) => (
             <div
               key={i}
-              className="flex items-start gap-4 bg-brand-surface/60 border border-brand-border rounded-xl p-5 hover:border-brand-blue/50 transition-colors duration-300"
+              className="flex items-start gap-3 bg-brand-surface/60 border border-brand-border rounded-xl p-4 hover:border-brand-blue/50 transition-colors duration-300"
             >
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-dark/80 border border-brand-border flex items-center justify-center text-xl">
+              <div className="flex-shrink-0 w-9 h-9 rounded-lg bg-brand-dark/80 border border-brand-border flex items-center justify-center text-lg">
                 {point.icon}
               </div>
-              <p className="font-body text-sm md:text-base text-white/80 leading-relaxed pt-1">
+              <p className="font-body text-sm text-white/80 leading-relaxed pt-1">
                 {point.text}
               </p>
             </div>

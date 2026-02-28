@@ -5,16 +5,16 @@ export function ConditionsSlide() {
   const { conditions } = clientConfig.content
 
   return (
-    <div className="relative w-full h-full flex items-center overflow-hidden">
+    <div className="relative w-full min-h-full flex items-start md:items-center overflow-hidden py-6 md:py-0">
       <div className="absolute inset-0 dot-grid opacity-30" />
       <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-brand-blue/8 blur-[120px] pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-12 flex flex-col gap-8">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-8 md:px-12 flex flex-col gap-6 md:gap-8">
         <div className="stagger">
           <SlideTitle label="Contrato" title={conditions.headline} />
         </div>
 
-        <div className="grid grid-cols-2 gap-6 stagger">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 stagger">
           {/* Conditions */}
           <div className="flex flex-col gap-2">
             <span className="font-mono text-xs text-brand-cyan tracking-wider uppercase mb-2">
